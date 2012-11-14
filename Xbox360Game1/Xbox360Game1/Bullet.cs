@@ -68,23 +68,8 @@ namespace Xbox360Game1
 
         public void Update(GameTime gameTime)
         {
-            //if (direction.X > 0)
-            //{
-            //    direction.X += 10;
-            //}
-            //else
-            //{
-            //    direction.X -= 10;
-            //}
-            //if (direction.Y > 0)
-            //{
-            //    direction.Y += 10;
-            //}
-            //else
-            //{
-            //    direction.Y -= 10;
-            //}
-            position += new Vector2(direction.X, -direction.Y) * 10;
+            direction.Normalize();
+            position += direction * 10;
         }
 
         public void Draw()

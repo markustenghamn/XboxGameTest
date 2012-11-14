@@ -207,8 +207,11 @@ namespace Xbox360Game1
                     {
                         Hit1FX.Play();
                         p.bullets.Remove(b);
-                        b.player.GetScore += 100;
                         o.life--;
+                        if (o.life == 0)
+                        {
+                            b.player.GetScore += 100;
+                        }
                         return 1;
                     }
                 }

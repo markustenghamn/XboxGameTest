@@ -32,7 +32,7 @@ namespace Xbox360Game1
         TimeSpan respawnTime = new TimeSpan(0, 0, 2);
 
         public List<Bullet> bullets = new List<Bullet>();
-        TimeSpan reload = new TimeSpan(3000000);
+        TimeSpan reload = new TimeSpan(2000000);
         TimeSpan lastShot;
 
         SoundEffect shotFX;
